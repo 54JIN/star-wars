@@ -30,8 +30,8 @@ async function getCharacter(id) {
     console.error(`Error reading character ${id} data.`, ex.message);
   }
   renderCharacter(character);
-
 }
+
 async function fetchCharacter(id) {
   let characterUrl = `${baseUrl}/characters/${id}`;
   return await fetch(characterUrl)
