@@ -20,7 +20,7 @@ async function getVehicle(id) {
             return `<li><a href="/character.html?id=${driver.id}">${driver.name}</a></li>`;
           });
         
-          document.querySelector("#vehicle_drivers_list").innerHTML = char_html.join("");
+          document.querySelector("#vehicle_drivers>ul").innerHTML = char_html.join("");
     } catch (err) {
         console.error(`Error reading vehicle ${id} data.`, err.message);
     }

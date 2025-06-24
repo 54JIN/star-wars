@@ -27,7 +27,7 @@ async function getStarship(id) {
             return `<li><a href="/character.html?id=${pilot.id}">${pilot.name}</a></li>`;
           });
         
-          document.querySelector("#starship_pilots_list").innerHTML = char_html.join("");
+          document.querySelector("#starship_pilots>ul").innerHTML = char_html.join("");
     } catch (err) {
         console.error(`Error reading starship ${id} data.`, err.message);
     }

@@ -11,14 +11,23 @@
 </head>
 
 <body>
-  <div>
-    <h1>Star Wars Universe Lookup</h1>
-    <label for="searchString">Who you looking for? <span class="small">(Regular expressions are cool
-        here)</span></label>
-    <input id="searchString" oninput="filterCharacters()" autocomplete="off" />
+  <div class="homepage">
+    <div class="background-wrapper">
+      <img src="./backgroundImg.jpg" />
+    </div>
+    <div class="page-wrapper">
+      <div class="page-title">
+        <h1 class="page-title-h1">Welcome to</h1>
+        <h1 class="page-title-h1-highlight">Star Wars Universe</h1>
+        <h1 class="page-title-h1">Lookup</h1>
+      </div>
+      <div class="searchString-wrapper">
+        <input id="searchString" class="inputSearchString" oninput="filterCharacters()" autocomplete="off" placeholder="Who you looking for?"/>
+      </div>
+      <section id="charactersList" class="charactersList">
+      </section>
+    </div>
   </div>
-  <section id="charactersList">
-  </section>
 </body>
 
 </html>

@@ -58,7 +58,7 @@ function renderCharacters(characters) {
     return `<li><a href="/character.html?id=${character.id}">${character.name}</a></li>`;
   });
 
-  document.querySelector("#film_character_list").innerHTML = char_html.join("");
+  document.querySelector("#film_characters>ul").innerHTML = char_html.join("");
 }
 
 function renderPlanets(planets) {
@@ -67,7 +67,7 @@ function renderPlanets(planets) {
     return `<li><a href="/planet.html?id=${planet.id}">${planet.name}</a></li>`;
   });
 
-  document.querySelector("#film_planet_list").innerHTML = char_html.join("");
+  document.querySelector("#film_planets>ul").innerHTML = char_html.join("");
 }
 
 function renderSpecies(species) {
@@ -75,7 +75,7 @@ function renderSpecies(species) {
         return `<li><a href="/species.html?id=${s.id}">${s.name}</a></li>`;
       });
     
-      document.querySelector("#film_species_list").innerHTML = char_html.join("");
+      document.querySelector("#film_species>ul").innerHTML = char_html.join("");
 }
 
 function renderStarships(starships) {
@@ -83,7 +83,7 @@ function renderStarships(starships) {
         return `<li><a href="/starships.html?id=${s.id}">${s.name}</a></li>`;
       });
     
-      document.querySelector("#film_starships_list").innerHTML = char_html.join("");
+      document.querySelector("#film_starships>ul").innerHTML = char_html.join("");
 }
 
 function renderVehicles(vehicles) {
@@ -91,7 +91,7 @@ function renderVehicles(vehicles) {
         return `<li><a href="/vehicles.html?id=${s.id}">${s.name}</a></li>`;
       });
     
-      document.querySelector("#film_vehicles_list").innerHTML = char_html.join("");
+      document.querySelector("#film_vehicles>ul").innerHTML = char_html.join("");
 }
 
 loadFilm(id);

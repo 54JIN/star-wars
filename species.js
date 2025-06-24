@@ -27,7 +27,7 @@ async function getSpecies(id) {
             return `<li><a href="/character.html?id=${character.id}">${character.name}</a></li>`;
           });
         
-          document.querySelector("#species_character_list").innerHTML = char_html.join("");
+          document.querySelector("#species_characters>ul").innerHTML = char_html.join("");
     } catch (err) {
         console.error(`Error reading species ${id} data.`, err.message);
     }
